@@ -56,7 +56,7 @@ sudo install minikube-linux-amd64 /usr/bin/minikube
 
 sudo yum install conntrack-tools -y
 
-minikube start --vm-driver=none
+minikube start --vm-driver=none or  minikube start --kubernetes-version=v1.23.0  --vm-driver=none
 
 kubectl run hello-minikube --image=gcr.io/google_containers/echoserver:1.4 --port=8080
 kubectl expose pod hello-minikube --type=NodePort
